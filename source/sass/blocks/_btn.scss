@@ -1,0 +1,91 @@
+.btn {
+  padding: 8px 13px;
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+
+  border: none;
+
+  background-color: $white;
+  color: $black;
+
+  border-radius: 0.75em;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $black;
+    background-color: darken($white, 5%);
+  }
+
+  &:active {
+    background-color: darken($white, 10%);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    background-color: $white;
+    cursor: auto;
+  }
+}
+
+.btn--green {
+  background-color: $btn-green-color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($btn-green-color, 3%);
+  }
+
+  &:active {
+    background-color: darken($btn-green-color, 7%);
+  }
+
+  &:disabled {
+    background-color: $btn-green-color;
+  }
+}
+
+.btn--red {
+  background-color: $btn-red-color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: darken($btn-red-color, 3%);
+  }
+
+  &:active {
+    background-color: darken($btn-red-color, 7%);
+  }
+
+  &:disabled {
+    background-color: $btn-red-color;
+  }
+}
+
+.btn--small {
+  padding: 5px 10px;
+
+  font-size: 14px;
+}
+
+.btn--medium {
+  padding: 10px 15px;
+
+  font-size: 22px;
+}
+
+.btn--large {
+  padding: 10px 20px;
+
+  font-size: 30px;
+}
